@@ -1,0 +1,13 @@
+runtime "ruby"
+
+name "IronMailer"
+
+exec "iron_mailer.rb"
+
+dir "../models"
+dir "../views/mailer"
+file "../views/layouts/email.html.erb", "layouts"
+file "../config/settings.yml"
+
+gem "actionmailer"
+gem "json"
